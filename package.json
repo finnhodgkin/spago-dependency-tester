@@ -1,0 +1,12 @@
+{
+  "name": "newspagtest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "spago run -p build && node ../spago/bin/index.dev.js build"
+  },
+  "author": "",
+  "license": "ISC"
+}

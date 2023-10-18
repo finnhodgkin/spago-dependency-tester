@@ -1,0 +1,13 @@
+package:
+  dependencies:
+    - aff
+    - console
+    - debug
+    - effect
+    - fmt
+    - node-fs
+    - prelude
+  name: build
+  test:
+    dependencies: []
+    main: Test.Main
