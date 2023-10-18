@@ -26,8 +26,8 @@ main = do
 
 generate :: forall m. MonadAff m => m Unit
 generate = do
-  liftAff $ rm' "./packages" { recursive: true, force: false, maxRetries: 0, retryDelay: 0 }
-  void $ liftAff $ try $ mkdir "./packages"
+  void $ liftAff $ try $ rm' "./packages" { recursive: true, force: false, maxRetries: 0, retryDelay: 0 }
+  liftAff $ mkdir "./packages"
   traverse_ (\name -> do
     let pursName = toPursName name
         dir = "./packages/" <> name
